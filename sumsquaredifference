@@ -1,0 +1,21 @@
+//This is solution to problem 6
+public class sumsquaredifference {
+
+	public static void main(String[] args) {
+		int sumOfSquares=sumOfSquares(100);
+		int sumOfNums=sumOfNums(100);
+		int square=sumOfNums*sumOfNums;
+		int diff=sumOfSquares-square;
+		System.out.println(diff);
+	}
+	public static int sumOfSquares(int n){
+		int sum=((n)*(n+1)*(2*n+1))/6;
+		return sum;
+	}
+	public static int sumOfNums(int n){
+		int sum=(n*(n+1))/2;
+		return sum;
+	}
+	
+
+}
